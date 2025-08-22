@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@slidev/cli": "latest",
-    "@slidev/theme-default": "latest"
+    "@slidev/theme-default": "latest",
+    "playwright-chromium": "latest"
   }
 }

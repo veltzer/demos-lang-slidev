@@ -30,9 +30,6 @@ ifeq ($(DO_SLIDEV_PDF),1)
 ALL+=$(SLIDEV_PDF)
 endif # DO_SLIDEV_PDF
 
-SLIDEV_DEPENDS=
-SLIDEV_FLAGS=
-
 #########
 # rules #
 #########
@@ -60,10 +57,10 @@ clean_hard:
 ############
 # patterns #
 ############
-$(SLIDEV_PDF): out/%.pdf: %.md $(SLIDEV_DEPENDS)
+$(SLIDEV_PDF): out/%.pdf: %.md
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)node_modules/.bin/slidev export $(SLIDEV_FLAGS) $< $@
+	$(Q)pymakehelper only_print_on_error node_modules/.bin/slidev export $< --with-clicks --output $@
 
 ##########
 # alldep #
