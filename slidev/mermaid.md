@@ -2,7 +2,7 @@
 
 Slidev can render Mermaid diagrams automatically.
 
-```mermaid
+```mermaid {scale: 0.8}
 graph TD
     A[Start] --> B[Process]
     B --> C{Decision}
