@@ -21,6 +21,15 @@ jobs:
       with:
         python-version: ${"${{ matrix.python-version }}"}
         cache: "pip"
+    - name: setup-node
+      uses: actions/setup-node@v4
+      with:
+        node-version: "22"
+        cache: "npm"
+    - name: npm-install
+      run: npm install
+    - name: playwright-install
+      run: npx playwright install --with-deps chromium
     - name: bootstrap-pip
       run: python -m pip install --upgrade pip
     - name: bootstrap
