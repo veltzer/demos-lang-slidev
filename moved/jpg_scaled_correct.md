@@ -14,7 +14,7 @@ This is an attempt to show how to stetch an image correctly on a slide
 
 ---
 
-# This slide contains a JPG image.
+## This slide contains a JPG image.
 
 This slide contains a JPG image.
 
@@ -30,7 +30,8 @@ This slide contains a JPG image.
 > This is the description of the image
 
 ---
-# This slide contains a JPG image.
+
+## This slide contains a JPG image.
 
 This slide contains a JPG image.
 

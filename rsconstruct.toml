@@ -27,3 +27,21 @@ src_dirs = ["."]
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
+
+# ─── markdown ────────────────────────────────────────────────────────────────
+
+[processor.rumdl.prose]
+src_files = ["README.md"]
+src_exclude_dirs = ["moved", "slidev"]
+
+# the slide decks are linted with the slide-dialect config, which turns off
+# the prose-only rules (e.g. MD041) that the Marp frontmatter-first format
+# inherently violates.
+[processor.rumdl.slides]
+src_dirs = ["moved", "slidev"]
+args = ["--config", ".rumdl.marp.toml"]
+
+# ─── json ────────────────────────────────────────────────────────────────────
+
+[processor.ijsonlint]
+src_files = ["package.json"]

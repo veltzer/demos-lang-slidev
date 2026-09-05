@@ -2,6 +2,7 @@
 marp: true
 theme: default
 ---
+
 <!-- If you want the image to be embedded into the pdf document you need to:
 - have a local url below when you point to the image.
 - you have to have the --allow-local-files if you want to embed local images into this presentation,
@@ -23,7 +24,7 @@ The problem is that we don't see the entire image or the text under the image
 
 ---
 
-# Slide with currect remote image
+## Slide with currect remote image
 
 This slide contains a JPG image.
 
@@ -32,7 +33,7 @@ This slide contains a JPG image.
 
 ---
 
-# Slide with wrong remote image
+## Slide with wrong remote image
 
 This slide contains a JPG image.
 

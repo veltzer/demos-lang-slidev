@@ -17,23 +17,23 @@ https://marp.app/
 
 ---
 
-# How to write slides
+## How to write slides
 
 Split pages by horizontal ruler (`---`). It's very simple! :satisfied:
 
-# Slide 1
+## Slide 1
 
 foobar
 
 ---
 
-# Slide 2
+## Slide 2
 
 foobar
 
 ---
 
-# A diagram with Mermaid
+## A diagram with Mermaid
 
 ```mermaid
 graph LR

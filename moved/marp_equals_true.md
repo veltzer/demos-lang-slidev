@@ -12,10 +12,10 @@ Hello World!
 <!-- This creates a new slide in Marp -->
 ---
 
-# Second Slide
+## Second Slide
 * Bullet point 1
 * Bullet point 2
 
 ---
 
-# Third Slide
+## Third Slide
