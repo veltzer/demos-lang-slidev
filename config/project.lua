@@ -1,3 +1,3 @@
-NAME = "demos-slidev"
+NAME = "demos-lang-slidev"
 DESCRIPTION_SHORT = "Demos for Slidev slides"
 KEYWORDS = {"marp", "slides", "slidev", "powerpoint", "pdf"}
