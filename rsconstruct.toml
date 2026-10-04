@@ -12,7 +12,7 @@ reject_dot_src_dirs = true
 # listed here must exist: rsconstruct rejects a missing one at config load.
 # Repos still on config/*.py keep a dep_inputs override in their local
 # overlay until converted.
-[processor.tera]
+[processor.generator.tera]
 dep_auto = [
 	"config/project.lua",
 	"config/personal.lua",
@@ -20,32 +20,32 @@ dep_auto = [
 ]
 src_dirs = ["tera.templates"]
 
-[processor.luacheck]
+[processor.checker.luacheck]
 src_dirs = ["config"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
 
-[processor.taplo]
+[processor.checker.taplo]
 src_files = [".rumdl.marp.toml", ".rumdl.toml", "rsconstruct.toml"]
 
 # lint the GitHub Actions workflow files with actionlint
-[processor.actionlint]
+[processor.checker.actionlint]
 src_dirs = [".github/workflows"]
 
 # ─── markdown ────────────────────────────────────────────────────────────────
 
-[processor.rumdl.prose]
+[processor.checker.rumdl.prose]
 src_files = ["README.md"]
 src_exclude_dirs = ["moved", "slidev"]
 
 # the slide decks are linted with the slide-dialect config, which turns off
 # the prose-only rules (e.g. MD041) that the Marp frontmatter-first format
 # inherently violates.
-[processor.rumdl.slides]
+[processor.checker.rumdl.slides]
 src_dirs = ["moved", "slidev"]
 args = ["--config", ".rumdl.marp.toml"]
 
 # ─── json ────────────────────────────────────────────────────────────────────
 
-[processor.ijsonlint]
+[processor.checker.ijsonlint]
 src_files = ["package.json"]
