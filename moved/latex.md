@@ -19,6 +19,7 @@ Here's a quadratic function equation:
 $$f(x) = ax^2 + bx + c$$
 
 Where:
+
 - $a \neq 0$
 - $a$, $b$, and $c$ are constants
 - $x$ is the variable

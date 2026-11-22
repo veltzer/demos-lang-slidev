@@ -14,6 +14,7 @@ Hello World!
 ---
 
 ## Second Slide
+
 * Bullet point 1
 * Bullet point 2
 
