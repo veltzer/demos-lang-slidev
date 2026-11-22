@@ -7,6 +7,7 @@ math: mathjax
 # Marp Presentation with LaTeX
 
 ## Introduction
+
 This is a simple Marp presentation that includes LaTeX equations.
 
 ---
