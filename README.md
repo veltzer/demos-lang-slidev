@@ -5,7 +5,7 @@
 
 description: Demos for Slidev slides
 
-project website: https://veltzer.github.io/demos-lang-slidev
+project website: <https://veltzer.github.io/demos-lang-slidev>
 
 author: Mark Veltzer
 

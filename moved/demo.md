@@ -13,7 +13,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 
 Markdown Presentation Ecosystem
 
-https://marp.app/
+<https://marp.app/>
 
 ---
 
