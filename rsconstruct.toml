@@ -38,9 +38,8 @@ args = ["--offline", "--no-progress", "--persona=pedantic"]
 src_files = ["README.md"]
 src_exclude_dirs = ["moved", "slidev"]
 
-# the slide decks are linted with the slide-dialect config, which turns off
-# the prose-only rules (e.g. MD041) that the Marp frontmatter-first format
-# inherently violates.
+# the slide decks are linted with the slide config (.rumdl.marp.toml), which
+# also resolves links from the project root, where Marp addresses images from.
 [processor.checker.rumdl.slides]
 src_dirs = ["moved", "slidev"]
 args = ["--config", ".rumdl.marp.toml"]
