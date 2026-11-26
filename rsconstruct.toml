@@ -52,4 +52,4 @@ args = ["--config", ".rumdl.marp.toml"]
 # ─── json ────────────────────────────────────────────────────────────────────
 
 [processor.checker.ijsonlint]
-src_files = ["package.json"]
+src_files = ["package-lock.json", "package.json"]
